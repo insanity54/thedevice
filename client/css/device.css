@@ -1,0 +1,64 @@
+
+body {
+    padding-top: 70px;
+}
+
+@font-face {
+ font-family: lcd;
+ src: url(../font/DS-DIGII.TTF);
+}
+
+.col-team {
+   min-width: 150px;
+}
+
+.progress-right .progress-bar {
+    float: right;
+}
+
+.progress-middle .progress-bar {
+    position: relative;
+    left: 50%;
+    margin-left: -25%;
+}
+
+.heading-team {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.red {
+  color: #EE5F5B;
+}
+
+.green {
+  color: #62C462;
+}
+
+.col-red {
+  text-align: center;
+
+}
+
+.col-green {
+  text-align: center;
+ 
+}
+
+.game-status {
+  text-align: center;
+}
+
+.time {
+  font-family: lcd;
+  font-size: 12vw;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.time-sub {
+  font-family: lcd;
+  font-size: 12px;
+  text-align: center;
+}
