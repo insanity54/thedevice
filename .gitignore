@@ -29,4 +29,5 @@ node_modules
 
 *~
 *#
-client/vendor
+
+dist
