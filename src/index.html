@@ -1,169 +1,18 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-  <script src="https://code.jquery.com/jquery.min.js"></script>
-  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
   <meta charset="utf-8">
-  <title>THE Device</title>
-  <link rel="stylesheet" href="/css/bootstrap.min.css">
-  <link rel="stylesheet" href="/css/device.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title></title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <link rel="stylesheet" href="/bundle.css">
 </head>
-
 <body>
-
-  <div id="panel"></div>
-
-  <div class="container">
-    <div class="row">
-      
-
-
-      <!-- red -->
-      <div class="col-xs-6 col-red col-team">
-        <div class="heading-team red">Red Team</div>
-        <div class="well">
-          <div class="time" id="time-red">3:31</div>
-        </div>
-
-        <div class="progress progress-right" id="progress-red">
-          <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 30%">
-          </div>
-        </div>
-      </div>
-
-
-      <!-- green -->
-      <div class="col-xs-6 col-green col-team">
-        <div class="heading-team green">Green Team</div>
-        <div class="well">
-          <div class="time" id="time-green">5:51</div>
-        </div>
-
-        <div class="progress progress-left" id="progress-green">
-          <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%">
-          </div>
-        </div>
-      </div>
-
-
-    </div>
-    <!-- /row -->
-
-    <div class="row">
-      <div class="col-xs-12">
-        
-        <div class="alert alert-default" id="game-info">
-          <ul>
-            <li>Game is <strong>ON</strong></li>
-            <li>Elapsed time 9:22</li>
-        </div>
-
-      </div>
-    </div>
-    
-    <div class="row">
-      <div class="col-xs-12">
-      
-        <div class="btn-group btn-group-justified">
-          <a href="#" class="btn btn-default"><span class="glyphicon glyphicon-play"></span></a>
-          <a href="#" class="btn btn-default"><span class="glyphicon glyphicon-pause"></span></a>
-          <a href="#" class="btn btn-default"><span class="glyphicon glyphicon-stop"></span></a>
-        </div>
-      </div>
-    </div>
-    
-    <hr>
-    
-    <!-- mode selektor -->
-    <div class="btn-group">
-      <a aria-expanded="false" href="#" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-          Mode Select
-          <span class="caret"></span>
-        </a>
-      <ul class="dropdown-menu">
-        <li><a href="#">Domination</a></li>
-        <li><a href="#">Intel</a></li>
-        <li><a href="#">Bomb</a></li>
-      </ul>
-    </div>
-    
-  </div> <!-- /container -->
-  
-  
-  <!-- TEMPLATES -->
-  <script id="game-view" type="text/template">
-    <div id="panel"></div>
-    <div id="content"></div>
-  </script>
-
-  
-  <script id="timer" type="text/html">
-    <div class="well">
-      <div class="time time-<%= color =%>"><%= time %></div>
-    </div>
-  </script>
-  
-  <script id="progressBar" type="text/html">
-    <div class="progress progress-<%= direction =%> progress-<%= color =%>">
-      <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: <%= percent =%>%">
-      </div>
-    </div>
-  </script>
-
-  <script id="heading" type="text/html">
-    <div class="heading-team heading-team<%= color =%>"
-      <%= text =%>
-    </div>
-  </script>
-  
-  <script id="panel-view" type="text/html">
-    <div class="navbar navbar-default navbar-fixed-top">
-      <div class="container">
-        <div class="navbar-header">
-          <a href="../" class="navbar-brand" id="brand">THE Device</a>
-        </div>
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav navbar-right">
-            <li><span class="glyphicon glyphicon-flash" id="connection"></span></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </script>
-  
-  
-
-
-      <!-- green -->
-      <div class="col-xs-6 col-green col-team">
-        <div class="heading-team green">Green Team</div>
-        <div class="well">
-          <div class="time" id="time-green">5:51</div>
-        </div>
-
-        <div class="progress progress-left" id="progress-green">
-          <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%">
-          </div>
-        </div>
-      </div>
-
-
-    </div>
-  derp
-  </script>
-
-  
-  <!-- scripts -->
-  <script src="/socket.io/socket.io.js"></script>
-  <script src="/vendor/jquery/dist/jquery.min.js"></script>
-  <script src="/vendor/underscore/underscore.js"></script>
-  <script src="/vendor/backbone/backbone.js"></script>
-  <script src="/vendor/marionette/lib/backbone.marionette.min.js"></script>
-  <script src="/js/app.js"></script>
-
+  <div class="application"></div>
+  <script src="/bundle.js"></script>
 </body>
-
 </html>

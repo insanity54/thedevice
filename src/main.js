@@ -20,7 +20,7 @@ ModalService.setup({
   container: app.layout.overlay
 });
 
-
+console.log('main:: creating game router with container', app.layout.content)
 app.game = new GameRouter({
   container: app.layout.content
 });

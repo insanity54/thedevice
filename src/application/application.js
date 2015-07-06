@@ -15,6 +15,7 @@ module.exports = Marionette.Application.extend({
   initialize() {
     this.$body = $(document.body);
     this.layout = new LayoutView();
+    //console.log('render that app');
     this.layout.render();
 
     this.listenTo(routerChannel, {
